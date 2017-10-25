@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -33,6 +33,30 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="?android:attr/windowBackground"
-        app:menu="@menu/navigation"/>
+        app:menu="@menu/navigation"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="36dp"
+        android:text="@string/Explicacao"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="26dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/botaoID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Começar"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
