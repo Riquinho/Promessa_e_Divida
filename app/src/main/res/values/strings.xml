@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Promessa e divida</string>
+    <string name="title_politicos">Politicos</string>
+    <string name="title_leis">Leis Aprovadas</string>
+    <string name="title_rank">Ranking</string>
+    <string name="Explicacao">Fique de olho se os seus politcos estão cumprindo suas promessas de campanha</string>
+</resources>
