@@ -6,26 +6,41 @@
     card_view:cardCornerRadius="10dp"
     card_view:cardElevation="10dp"
     android:layout_height="wrap_content">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ImageView
+            android:id="@+id/PoliticoImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/PoliticoImage"
             android:padding="5dp"
             android:src="@drawable/placeholder" />
+
         <TextView
+            android:id="@+id/nameTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Name"
-            android:id="@+id/nameTxt"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/PoliticoImage"
             android:padding="10dp"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/idade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Idade"
+            android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@color/colorAccent"
             android:layout_below="@+id/PoliticoImage"
-            android:layout_alignParentLeft="true"
-            />
+            android:layout_alignRight="@+id/PoliticoImage"
+            android:layout_alignEnd="@+id/PoliticoImage" />
+
 
     </RelativeLayout>
 </android.support.v7.widget.CardView>

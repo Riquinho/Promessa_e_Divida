@@ -12,13 +12,14 @@ public class MyHolder {
 
     TextView nameTxt;
     ImageView img;
+    TextView idade;
 
     public MyHolder(View itemView) {
 
 
         nameTxt= (TextView) itemView.findViewById(R.id.nameTxt);
         img=(ImageView) itemView.findViewById(R.id.PoliticoImage);
-
+        idade= (TextView) itemView.findViewById(R.id.idade);
 
     }
 }

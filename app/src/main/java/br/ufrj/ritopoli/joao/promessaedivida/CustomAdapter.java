@@ -56,6 +56,7 @@ public class CustomAdapter extends BaseAdapter {
 
         MyHolder holder= new MyHolder(convertview);
         holder.nameTxt.setText(Politicos.get(i).getName());
+        holder.idade.setText(Politicos.get(i).getIdade());
         PicassoClient.downloadimg(c,Politicos.get(i).getUrl(),holder.img);
 
 

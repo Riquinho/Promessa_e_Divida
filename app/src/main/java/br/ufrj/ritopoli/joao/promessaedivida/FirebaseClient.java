@@ -35,11 +35,12 @@ public class FirebaseClient  {
         firebase=new Firebase(DB_URL);
     }
 
-    public  void savedata(String name, String url)
+    public  void savedata(String name, String url, String idade)
     {
         Politico d= new Politico();
         d.setName(name);
         d.setUrl(url);
+        d.setIdade(idade);
 
         firebase.child("Politico").push().setValue(d);
 
@@ -84,6 +85,7 @@ public class FirebaseClient  {
             Politico d= new Politico();
             d.setName(ds.getValue(Politico.class).getName());
             d.setUrl(ds.getValue(Politico.class).getUrl());
+            d.setIdade(ds.getValue(Politico.class).getIdade());
             Politicos.add(d);
 
         }

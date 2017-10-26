@@ -7,6 +7,8 @@ package br.ufrj.ritopoli.joao.promessaedivida;
 public class Politico {
 
     private  String name;
+    private  String url;
+    private String idade;
 
     public String getName() {
         return name;
@@ -14,6 +16,14 @@ public class Politico {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getIdade() {
+        return idade;
+    }
+
+    public void setIdade(String idade) {
+        this.idade = idade;
     }
 
     public String getUrl() {
@@ -27,6 +37,6 @@ public class Politico {
     public Politico() {
     }
 
-    private  String url;
+
 }
 
