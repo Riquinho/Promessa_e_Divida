@@ -23,7 +23,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".PoliticosActivity"></activity>
+        <activity android:name=".PoliticosActivity"/>
     </application>
 
 </manifest>

@@ -18,7 +18,7 @@ public class CustomAdapter extends BaseAdapter {
     LayoutInflater inflater;
 
 
-    public CustomAdapter(Context c, ArrayList<Politico> dogies) {
+    public CustomAdapter(Context c, ArrayList<Politico> Politicos) {
         this.c = c;
         this.Politicos = Politicos;
     }
@@ -50,10 +50,13 @@ public class CustomAdapter extends BaseAdapter {
             inflater=(LayoutInflater)c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         } if(convertview==null)
         {
-            convertview= inflater.inflate(R.layout.activity_politicos,viewGroup,false);
+            convertview= inflater.inflate(R.layout.listview_layout,viewGroup,false);
 
         }
 
+        MyHolder holder= new MyHolder(convertview);
+        holder.nameTxt.setText(Politicos.get(i).getName());
+        PicassoClient.downloadimg(c,Politicos.get(i).getUrl(),holder.img);
 
 
 
