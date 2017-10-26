@@ -55,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="@string/bottao"
+        android:text="Começar"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 

@@ -5,4 +5,5 @@
     <string name="title_rank">Ranking</string>
     <string name="Explicacao">Fique de olho se os seus politcos estão cumprindo suas promessas de campanha</string>
     <string name="title_activity_politicos">PoliticosActivity</string>
+    <string name="bottao">Começar</string>
 </resources>
