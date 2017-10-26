@@ -86,6 +86,10 @@ public class FirebaseClient  {
             d.setName(ds.getValue(Politico.class).getName());
             d.setUrl(ds.getValue(Politico.class).getUrl());
             d.setIdade(ds.getValue(Politico.class).getIdade());
+            d.setPartido(ds.getValue(Politico.class).getPartido());
+            d.setContato(ds.getValue(Politico.class).getContato());
+            d.setCargo(ds.getValue(Politico.class).getCargo());
+            d.setVotos(ds.getValue(Politico.class).getVotos());
             Politicos.add(d);
 
         }

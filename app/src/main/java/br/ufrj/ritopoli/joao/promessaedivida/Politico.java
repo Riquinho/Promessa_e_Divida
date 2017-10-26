@@ -9,6 +9,10 @@ public class Politico {
     private  String name;
     private  String url;
     private String idade;
+    private String partido;
+    private String contato;
+    private String cargo;
+    private String votos;
 
     public String getName() {
         return name;
@@ -24,6 +28,38 @@ public class Politico {
 
     public void setIdade(String idade) {
         this.idade = idade;
+    }
+
+    public String getPartido() {
+        return partido;
+    }
+
+    public void setPartido(String partido) {
+        this.partido = partido;
+    }
+
+    public String getContato() {
+        return contato;
+    }
+
+    public void setContato(String contato) {
+        this.contato = contato;
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+
+    public String getVotos() {
+        return votos;
+    }
+
+    public void setVotos(String votos) {
+        this.votos = votos;
     }
 
     public String getUrl() {
