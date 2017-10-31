@@ -26,6 +26,7 @@ public class MainActivity extends Activity {
                     return true;
                 case R.id.navigation_leis:
                     mTextMessage.setText(R.string.title_leis);
+                    startActivity(new Intent(MainActivity.this, VotoActivity.class));
                     return true;
                 case R.id.navigation_rank:
                     mTextMessage.setText(R.string.title_rank);
